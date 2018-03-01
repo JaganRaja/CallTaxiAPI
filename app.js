@@ -15,7 +15,10 @@ app.use(bodyParser.json());
 
 var taxiRouter = express.Router();
 
+app.get("/hello",function(req,res){
 
+    res.send("hello");
+})
 
 taxiRouter.route('/')
     .get(function (req, res) {
@@ -184,7 +187,7 @@ taxiRouter.route('/calculate')
 
     }); */
 
-    app.use('/taxies', taxiRouter);
+   // app.use('/taxies', taxiRouter);
     
 var port = process.env.PORT || 7777
 app.listen (port,()=> console.log('Running on localhost:7777'));
