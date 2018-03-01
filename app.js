@@ -4,7 +4,7 @@ var Taxi = require('./Model/taxiModel');
 var bodyParser = require('body-parser');
 var cors  = require('cors');
 
-var db = mongoose.connect("mongodb://localhost:27017/callTaxiDatabase");
+var db = mongoose.connect("mongodb://taxi:driver@ds151528.mlab.com:51528/calltaxiapi");
 
 var app = express();
 

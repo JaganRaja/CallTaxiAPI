@@ -10,4 +10,4 @@ var taxiModel = new Schema({
 
 });
 
-module.exports = mongoose.model("Taxi",taxiModel);
+module.exports = mongoose.model("taxi",taxiModel);
