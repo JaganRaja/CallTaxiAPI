@@ -177,9 +177,10 @@ taxiRouter.route('/calculate')
 
     })
 
-    app.listen(9874, function () {
+    /* app.listen(9874, function () {
 
         console.log("Server is running on port 7777");
-    });
+    }); */
     
-
+var port = process.env.PORT || 7777
+app.listen (port,()=> console.log('Running on localhost:7777'));
